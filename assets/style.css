@@ -1,0 +1,12 @@
+.albumart{
+	height: 150px;
+	width:  150px;
+	float:  left;
+	border: 2px white solid;
+}
+.right{
+	text-align: right;
+}
+.banner{
+	min-height: 170px;
+}
