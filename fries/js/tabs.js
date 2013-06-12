@@ -6,7 +6,7 @@
     }
   };
 
-  window.addEventListener('touchend', function (e) {
+  window.addEventListener('click', function (e) {
     var activeTab;
     var activeBody;
     var targetBody;
