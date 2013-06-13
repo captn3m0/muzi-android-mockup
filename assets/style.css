@@ -16,3 +16,17 @@
 h2>a{
 	color:white;
 }
+.mini{
+  float:left;
+  border:2px white solid;
+  margin-right:10px;
+}
+
+.list-item-multi-line{
+  display:block;
+  min-height:60px;
+}
+
+.list-item-multi-line p{
+	padding-top: 12px;
+}
