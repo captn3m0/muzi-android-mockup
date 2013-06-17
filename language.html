@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+  
+  <title>Fries</title>
+
+  <link rel="shortcut icon" href="favicon.png"/>
+
+  <link rel="stylesheet" href="fries/css/base.css">
+  <link rel="stylesheet" href="fries/css/action-bars.css">
+  <link rel="stylesheet" href="fries/css/chevrons.css">
+  <link rel="stylesheet" href="fries/css/tabs.css">
+  <link rel="stylesheet" href="fries/css/content.css">
+  <link rel="stylesheet" href="fries/css/buttons.css">
+  <link rel="stylesheet" href="fries/css/forms.css">
+  <link rel="stylesheet" href="fries/css/lists.css">
+  <link rel="stylesheet" href="fries/css/spinners.css">
+  <link rel="stylesheet" href="fries/css/icomoon.css">
+  <link rel="stylesheet" href="fries/css/stack.css">
+  <link rel="stylesheet" href="fries/css/sliders.css">
+  <link rel="stylesheet" href="assets/switch.css">
+</head>
+<body ontouchstart="">
+
+  <div class="page">
+    
+    <header class="action-bar fixed-top">
+      <a href="index.html" class="app-icon action up">
+        <i class="chevron"></i>
+        <i class="icon-play"></i>
+      </a>
+      <h1 class="title">Albums</h1>
+      <ul class="actions pull-right">
+        <li><a href="settings.html" class="action" title="Settings"><i class="icon-settings"></i></a></li>
+      </ul>
+    </header>
+
+    <nav class="action-bar fixed-bottom">
+      <ul class="actions flex" data-overflow="false">
+        <li><a class="action" title="Now Playing"><i class="icon-image"></i></a></li>
+        <li><a class="action" title="Previous Track"><i class="icon-previous"></i></a></li>
+        <li><a class="action" title="Play"><i class="icon-play"></i></a></li>
+        <li><a class="action" title="Next Track"><i class="icon-next"></i></a></li>
+        <li><a class="action" title="Shuffle"><i class="icon-shuffle"></i></a></li>
+        <li><a class="action" title="Repeat"><i class="icon-repeat"></i></a></li>
+      </ul>
+    </nav>
+    <!-- Main content div-->
+    <div class="content">
+      <ul class="list inset">
+        <li>English
+          <div class="onoffswitch right" style="float:right;top:-10px;">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" checked>
+            <label class="onoffswitch-label" for="myonoffswitch">
+              <div class="onoffswitch-inner">
+                <div class="onoffswitch-active"><div class="onoffswitch-switch">ON</div></div>
+              </div>
+            </label>
+          </div>
+        </li>
+        <li>
+            Hindi
+            <div class="onoffswitch right" style="float:right;top:-10px;">
+              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" checked>
+              <label class="onoffswitch-label" for="myonoffswitch">
+                <div class="onoffswitch-inner">
+                  <div class="onoffswitch-inactive"><div class="onoffswitch-switch">OFF</div></div>
+                </div>
+              </label>
+            </div>
+        </li>
+        <li>
+          Tamil
+          <div class="onoffswitch right" style="float:right;top:-10px;">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" checked>
+            <label class="onoffswitch-label" for="myonoffswitch">
+              <div class="onoffswitch-inner">
+                <div class="onoffswitch-inactive"><div class="onoffswitch-switch">OFF</div></div>
+              </div>
+            </label>
+          </div>
+        </li>
+        <li class="list-item-multi-line">
+          <p>
+            This language filtering is only used for Album and Artist lists. 
+            Search results and Top Tracks/Albums are returned without this filter.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script src="fries/js/stack.js"></script>
+</body>
+</html>
