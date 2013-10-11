@@ -30,3 +30,20 @@ h2>a{
 .list-item-multi-line p{
 	padding-top: 12px;
 }
+.thumbnail{
+	height: 32px;
+	width: 32px;
+	float:left;
+	margin-right: 5px;
+	border: 1px white;
+}
+.double{
+	height:96px;
+}
+#my-dialog{
+	width: 174px !important;
+	height: 174px !important;
+}
+.hidden{
+	display:none;
+}

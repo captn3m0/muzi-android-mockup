@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+  <title>Muzi | SDSLabs</title>
+
+  <link rel="shortcut icon" href="favicon.png"/>
+
+  <link rel="stylesheet" href="fries/themes/holo-dark/holo-dark.min.css">  <link rel="stylesheet" href="assets/style.css">
+  <script src="fries/fries.min.js"></script>
+  <script>
+    var showAlbumArt = function(){
+      window.d = new fries.Dialog({
+        selector:"#my-dialog",
+        callbackOk: function(){
+          this.hide();
+        }
+      })
+      d.show();
+    }
+  </script>
+</head>
+<body ontouchstart="">
+
+  <div class="page">
+
+    <header class="action-bar fixed-top">
+      <a href="index.html" class="app-icon action">
+        <i class="icon-play"></i>
+      </a>
+      <h1 class="title">Muzi | SDSLabs</h1>
+      <ul class="actions pull-right">
+        <li><a href="settings.html" class="action" title="Settings"><i class="icon-settings"></i></a></li>
+      </ul>
+    </header>
+
+    <nav class="action-bar fixed-bottom double">
+
+      <ul class="actions flex" data-overflow="false">
+        <li><a class="action" title="Now Playing" href="#" onclick="showAlbumArt();"><img src="assets/13651.jpg" class="thumbnail"></a></li>
+        <li><a class="action" title="Previous Track"><i class="icon-previous"></i></a></li>
+        <li><a class="action" title="Play"><i class="icon-play-2"></i></a></li>
+        <li><a class="action" title="Next Track"><i class="icon-next"></i></a></li>
+        <li><a class="action" title="Shuffle"><i class="icon-shuffle"></i></a></li>
+        <li><a class="action" title="Repeat"><i class="icon-repeat"></i></a></li>
+      </ul>
+      <center>
+        <a href="#">Right as Rain</a>
+        <input type="range" min="0" max="100">
+      </center>
+    </nav>
+    <!-- Main content div-->
+    <div class="content">
+      <ul class="list inset">
+        <li>
+          <form class="form-flex" action="search.html">
+            <div class="flex-group">
+              <input type="text" placeholder="🔍 Search" class="input-text" default onenter="this.submit()">
+            </div>
+          </form>
+        </li>
+        <li><img src="assets/13651.jpg" class="thumbnail">Daydreamer</li>
+        <li><img src="assets/13651.jpg" class="thumbnail">Best for Last</li>
+        <li><img src="assets/13651.jpg" class="thumbnail">Chasing Pavements</li>
+        <li><img src="assets/13651.jpg" class="thumbnail">Cold Shoulder</li>
+        <li><img src="assets/13651.jpg" class="thumbnail">Crazy for You</li>
+        <li><img src="assets/13651.jpg" class="thumbnail">Melt My Heart to Stone</li>
+        <li><img src="assets/13651.jpg" class="thumbnail">First Love</li>
+        <li><img src="assets/13651.jpg" class="thumbnail">Right As Rain</li>
+        <li><img src="assets/13651.jpg" class="thumbnail">Make You Feel My Love</li>
+        <li><img src="assets/13651.jpg" class="thumbnail">My Same</li>
+        <li><img src="assets/13651.jpg" class="thumbnail">Tired</li>
+        <li><img src="assets/13651.jpg" class="thumbnail">Hometown Glory</li>
+        <li><img src="assets/13651.jpg" class="thumbnail">Chasing Pavements (Live At Hotel Cafe)</li>
+        <li><img src="assets/13651.jpg" class="thumbnail">Melt My Heart to Stone (Live At Hotel Cafe)</li>
+        <li><img src="assets/13651.jpg" class="thumbnail">That’s It, I Quit, I’m Movin’ On (Live At Hotel Cafe)</li>
+      </ul>
+    </div>
+    <div class="dialogs">
+      <div id="my-dialog" class="dialog">
+        <img src="assets/13651.jpg">
+        <ul class="dialog-actions hidden">
+          <li><a href="#" class="dialog-ok-button">OK</a></li>
+          <li><a href="#" class="dialog-cancel-button"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.getElementById("my-dialog").onclick =function(){
+      window.d.hide();
+    };
+  </script>
+</body>
+</html>
